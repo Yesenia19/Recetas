@@ -19,7 +19,7 @@ Notification.requestPermission().then(permission => {
 //navigator.setAppBadge(42);
 
 navigator.setAppBadge(42).then(() => {
-    console.log("The badge was added");
+    console.log("La badge fue agregada");
 }).catch(e => {
     console.error("Error displaying the badge", e);
 });
