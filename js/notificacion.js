@@ -4,7 +4,7 @@ Notification.requestPermission().then(permission => {
       // El usuario ha permitido las notificaciones
         const notification = new Notification('Nuevo mensaje', {
         body: 'Gracias por aceptar notificaciones',
-        badge: 'https://github.com/Yesenia19/Recetas/badge.png'
+        badge: 'https://github.com/Yesenia19/Recetas/images/badge.png'
     });
     } else {
         console.log("El usuario ha denegado las notificaciones");
