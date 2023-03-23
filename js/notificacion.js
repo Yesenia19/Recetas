@@ -4,7 +4,17 @@ Notification.requestPermission().then(permission => {
       // El usuario ha permitido las notificaciones
         const notification = new Notification('Nuevo mensaje', {
         body: 'Gracias por aceptar notificaciones',
-        badge: 'images/badge.png'
+        icon: 'images/badge.png',
+        actions: [
+            {
+                action: "view-content",
+                title: "Yes"
+            },
+            {
+                action: "go-home",
+                title: "No"
+            }
+        ]
     });
     } else {
         console.log("El usuario ha denegado las notificaciones");
