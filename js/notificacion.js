@@ -11,6 +11,18 @@ Notification.requestPermission().then(permission => {
       // El usuario ha denegado las notificaciones
     }
   });
+
+// To display an empty badge
+//navigator.setAppBadge();
+
+// To display a number in the badge
+//navigator.setAppBadge(42);
+
+navigator.setAppBadge(42).then(() => {
+    console.log("The badge was added");
+}).catch(e => {
+    console.error("Error displaying the badge", e);
+});
   
 
   
