@@ -25,7 +25,7 @@ const showMonedas = () => {
             </div>
             `)
         )
-        container.innerHTML = output
+       
     }
     document.addEventListener("DOMContentLoaded", showMonedas)
 
