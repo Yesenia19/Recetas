@@ -4,7 +4,7 @@ Notification.requestPermission().then(permission => {
       // El usuario ha permitido las notificaciones
         new Notification('Nuevo mensaje', {
         body: 'Revisa las actualizaciones que tenemos para ti',
-        icon: 'images/icon.png',
+        icon: 'images/icon-384x384.png',
     }); 
     } else {
         console.log("El usuario ha denegado las notificaciones");
