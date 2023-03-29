@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Recetas</title>
-        <link rel="manifest" href="manifest.json" />
-        
-        <body>
-            <header>
-              <nav>
-                <ul>
-                  <li><a href="#recetas-destacadas">Recetas destacadas</a></li>
-                  <li><a href="#categorias">Categorías</a></li>
-                  <li><a href="#contacto">Contacto</a></li>
-                </ul>
-              </nav>
-              <h1>Recetas de cocina</h1>
-              <p>Encuentra aquí las mejores recetas saludables</p>
-            </header>
-          
-            <main>
-                <section id="recetas-destacadas">
-                    <h2>Recetas destacadas</h2>
-                    <article>
-                      <h3>Ensalada de quinoa</h3>
-                      <img src="/Recetas/images/ensalada-quinoa.jpg" alt="Ensalada de quinoa">
-                      <p>Ingredientes:</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="/Recetas/images/icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header> <!-- Encabezado -->
+        <nav class="nav">
+            <a href="#" aria-label="logo"><!-- Logo -->
+                <img alt="" src="images/logo.png" class="logo">
+            </a> 
+    
+            <!-- Menu con Bars -->
+            <button class="nav-toggle" aria-label="Abrir menú"> 
+                <i class='bx bx-menu'></i>
+            </button>
+    
+            <ul class="nav-menu"> <!-- Lista de las secciones -->
+                <li class="nav-menu-item">
+                    <a href="#categorias" class="nav-menu-link nav-link">Categorías</a>
+                    <ul class="submenu"> <!-- Lista de las sub secciones -->
+                        <li><a href="#recetas-destacadas" class="nav-menu-link nav-link">Ensaladas</a></li>
+                        <li><a href="catalogo.html" class="nav-menu-link nav-link">Platos principales</a></li>
+                        <li><a href="catalogo.html" class="nav-menu-link nav-link">Postres saludables</a></li>
+                        <li><a href="catalogo.html" class="nav-menu-link nav-link">Bebidas naturales</a></li>
+                    </ul>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#recetas-destacadas" class="nav-menu-link nav-link">Recetas destacadas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="recetas-destacadas" id="recetas-destacadas"> <!-- Seccion de recetas-destacadas -->
+        <div class="main-text">
+            <br>  <br>  <br>
+            <h2><span>Recetas</span> Destacadas</h2>
+        </div>
+        <div class="destacadas-content">
+            <div class="box">
+                <img src="images/ensalada-quinoa.jpg" alt="Ensalada de quinoa" class="imagen">
+                <h3>Ensalada de quinoa</h3>
+                <p>
+                    <p>Ingredientes:</p>
                       <ul>
                         <li>Quinoa</li>
                         <li>Tomate</li>
@@ -38,58 +63,73 @@
                         <li>Limón</li>
                         <li>Aceite de oliva</li>
                         <li>Sal</li>
-                      </ul>
-                      <a href="#">Ver receta completa</a>
-                    </article>
-                    <article>
-                      <h3>Pollo a la plancha con verduras</h3>
-                      <img src="/Recetas/images/pollo-verduras.jpg" alt="Pollo a la plancha con verduras">
-                      <p>Ingredientes:</p>
+                      </ul>  
+                </p>
+            </div>
+    
+            <div class="box">
+                <img src="images/ensalada-quinoa.jpg" alt="Ensalada de quinoa" class="imagen">
+                <h3>Ensalada de quinoa</h3>
+                <p>
+                    <p>Ingredientes:</p>
                       <ul>
-                        <li>Pollo</li>
-                        <li>Calabacín</li>
-                        <li>Zanahoria</li>
-                        <li>Pimiento rojo</li>
+                        <li>Quinoa</li>
+                        <li>Tomate</li>
                         <li>Cebolla</li>
+                        <li>Lechuga</li>
+                        <li>Zanahoria</li>
+                        <li>Garbanzos</li>
                         <li>Limón</li>
                         <li>Aceite de oliva</li>
                         <li>Sal</li>
-                      </ul>
-                      <a href="#">Ver receta completa</a>
-                    </article>
-                    <article>
-                        <h3>Pechugas de pollo al horno</h3>
-                        <img src="/Recetas/images/pollo.jpg" alt="Pechugas de pollo al horno">
-                        <p>Ingredientes:</p>
-                        <ul>
-                          <li>Pechugas de pollo</li>
-                          <li>Tomate</li>
-                          <li>Zanahoria</li>
-                          <li>Cebolla</li>
-                          <li>Ajo</li>
-                          <li>Aceite de oliva</li>
-                          <li>Sal</li>
-                          <li>Orégano</li>
-                        </ul>
-                        <a href="#">Ver receta completa</a>
-                    </article>
-                  </section>
-              
-                  <section id="categorias">
-                    <h2>Categorías</h2>
-                    <ul>
-                      <li><a href="#">Ensaladas</a></li>
-                      <li><a href="#">Platos principales</a></li>
-                      <li><a href="#">Postres saludables</a></li>
-                      <li><a href="#">Bebidas naturales</a></li>
-                    </ul>
-                  </section>
-            </main>
-          
-            <footer>
-              <p>Recetas de cocina © 2023</p>
-            </footer>
-            <script src="js/app.js"></script>
-            <script src="js/notificacion.js"></script>
-          </body>
+                      </ul>  
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/ensalada-quinoa.jpg" alt="Ensalada de quinoa" class="imagen">
+                <h3>Ensalada de quinoa</h3>
+                <p>
+                    <p>Ingredientes:</p>
+                      <ul>
+                        <li>Quinoa</li>
+                        <li>Tomate</li>
+                        <li>Cebolla</li>
+                        <li>Lechuga</li>
+                        <li>Zanahoria</li>
+                        <li>Garbanzos</li>
+                        <li>Limón</li>
+                        <li>Aceite de oliva</li>
+                        <li>Sal</li>
+                      </ul>  
+                </p>
+            </div> 
+    
+            <div class="box">
+                <img src="images/ensalada-quinoa.jpg" alt="Ensalada de quinoa" class="imagen">
+                <h3>Ensalada de quinoa</h3>
+                <p>
+                    <p>Ingredientes:</p>
+                      <ul>
+                        <li>Quinoa</li>
+                        <li>Tomate</li>
+                        <li>Cebolla</li>
+                        <li>Lechuga</li>
+                        <li>Zanahoria</li>
+                        <li>Garbanzos</li>
+                        <li>Limón</li>
+                        <li>Aceite de oliva</li>
+                        <li>Sal</li>
+                      </ul>  
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <p>Recetas de cocina © 2023</p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/notificacion.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>

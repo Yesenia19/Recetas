@@ -16,7 +16,7 @@ const assets = [
     "/images/Fuerza_Aerea_20_revTransp_peq.png",
     "/images/Morelos_20_anvTransp_peq.png",
     "/images/C_mon_20_pesos_PlanDNIIIE.png",
-    "images/moneda.png",
+    "images/icono.png",
 ]
 
 self.addEventListener("install", installEvent => {

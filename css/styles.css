@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=Raleway:ital,wght@0,300;0,400;1,500&display=swap');
+:root {
+    --color-fresa: #FB6966;
+    --color-rosita: #FCB3AC;
+    --color-rarito: #E0653B;
+    --color-babyrosa: #FBD1C7;
+    --color-hojita: #C1BB41;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--color-babyrosa);
+    padding: 20px;
+    
+}
+
+header {
+    background-color: var(--color-babyrosa);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: var(--color-rarito);
+    font-weight: bold;
+    font-family: 'Delicious Handrawn', cursive;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+li{
+    list-style: none;
+}
+
+.logo {
+    font-size: 50px;
+    padding: 1px 0px;
+    height: 120px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link:hover{
+    color: var(--color-hojita);
+    transition: 0.5s;
+} 
+.submenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--color-rosita);
+    text-decoration: none;
+    top: 55px;
+    left: 660px;
+}
+.nav-menu-item:hover > .submenu{
+    display: block;
+
+}
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px){
+    body {
+        padding-top: 70px;
+    }
+    
+    header {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 30px;
+        padding: 8px 10px;
+        height: 55px;
+    
+    }
+    .nav-link {
+        color: var(--color-hojita);
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: var(--color-babyrosa);
+        position: fixed;
+        left: 0;
+        top: 43px;
+        width: 80%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transform: left 0.3s;
+    }
+    .nav-menu-item {
+        line-height: 70px;
+    }
+    .nav-menu-link:hover {
+        background: none;
+        color: var(--color-rarito);
+    } 
+    .nav-toggle {
+        display: block;
+        color: var(--color-negro);
+        font-size: 33px;
+        
+    }
+    .submenu{
+        background-color: var(--color-babyrosa);
+        top: 70px;
+        left: 66px;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+    .nav-menu-item:hover > .submenu{
+        display: block;
+    
+    }
+}
+
+.recetas-destacadas{
+    background: var(--color-babyrosa);
+}
+.main-text {
+    text-align: center;
+    
+}
+.main-text p {
+    color: var(--color-blanco);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+    color: var(--color-hojita);
+    font-family: 'Delicious Handrawn', cursive;
+}
+.destacadas-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box {
+    background: var(--color-blanco);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-fresa);
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+
+}
+.box ul{
+    color: var(--color-negro);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+.box p{
+    color: var(--color-hojita);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.imagen{
+    height: 190px;
+    
+}
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
