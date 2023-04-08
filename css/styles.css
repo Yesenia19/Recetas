@@ -223,3 +223,59 @@ i{
     transform: translateY(-8px);
     cursor: pointer;
 }
+
+/*Notificacion*/
+
+.container {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    transform: translate(-50%,-50%);
+    font-family: arial;
+    text-align: center;
+}
+
+.container .bx {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433',endColorstr='#bc1888',GradientType=1);
+    font-size: 50px;
+    border-radius: 50px;
+    color: red;
+}
+
+.container .notify::before {
+    position: absolute;
+    content: attr(data-count);
+    top: -22px;
+    right: -3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 3px 15px;
+    background: linear-gradient(#ff1a1a,#ff0000,#e60000);
+    border-radius: 75%;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: opacity 0.1s ease-out;
+}
+
+.container .btn {
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    color: white;
+   
+    font-weight: bold;
+    background: #1A237E;
+    border-radius: 50%;
+   
+    outline: none;
+    cursor: pointer;
+}
+
+.container .btn:hover {
+    background: #161d6a;
+}
+
+.notify.add-numb::before {
+    opacity: 1;
+}
