@@ -9,42 +9,70 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="/Recetas/images/icon.png" >
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-
 </head>
 <body>
     
-    <header> <!-- Encabezado -->
-        <nav class="nav">
-            <a href="#" aria-label="logo"><!-- Logo -->
-                <img alt="" src="images/logo.png" class="logo">
-            </a> 
-    
-            <!-- Menu con Bars -->
-            <button class="nav-toggle" aria-label="Abrir menú"> 
-                <i class='bx bx-menu'></i>
-            </button>
-    
-            <ul class="nav-menu"> <!-- Lista de las secciones -->
-                <li class="nav-menu-item">
-                    <a href="#categorias" class="nav-menu-link nav-link">Categorías</a>
-                    <ul class="submenu"> <!-- Lista de las sub secciones -->
-                        <li><a href="#recetas-destacadas" class="nav-menu-link nav-link">Ensaladas</a></li>
-                        <li><a href="catalogo.html" class="nav-menu-link nav-link">Platos principales</a></li>
-                        <li><a href="catalogo.html" class="nav-menu-link nav-link">Postres saludables</a></li>
-                        <li><a href="catalogo.html" class="nav-menu-link nav-link">Bebidas naturales</a></li>
+    <!--Encabezado de la página-->
+    <header class="header">
+        <a id="open-close"><i class='bx bx-menu'></i></a>
+        <img class="logo" src="images/logo.png" alt="">
+        <!-- Notificaciones -->
+        
+    </header>
+    <!--Menú de navegación-->
+    <nav class="nav">
+        <aside id="aside"> 
+            <ul class="list">
+                <!--Opción para Inicio-->
+                <li class="list__item">
+                    <div class="list__button">
+                        <i class='bx bx-home'></i>
+                        <a href="#" class="nav__link">Inicio</a>
+                    </div>
+                </li>
+                <!--Opción para Categorias-->
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <i class='bx bx-category-alt'></i>
+                        <a href="#" class="nav__link">Categorias</a>
+                        <i class='bx bxs-chevron-right list__arrow'></i>
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">Platos Principales</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">Postres Saludabes</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">Bebidas Naturales</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="nav-menu-item">
-                    <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
+
+                <li class="list__item">
+                    <div class="list__button">
+                        <i class='bx bxs-star'></i>
+                        <a href="#" class="nav__link">Recetas Destacadas</a>
+                    </div>
                 </li>
-                <li class="nav-menu-item" >
-                    <a href="#recetas-destacadas" class="nav-menu-link nav-link">Recetas destacadas</a>
-                    <span class="badge">1</span>
+                <li class="list__item">
+                    <div class="list__button">
+                        <i class='bx bxs-contact' ></i>
+                        <a href="#" class="nav__link">Contacto</a>
+                    </div>
+                </li>
+                <!--Opción para Salir-->
+                <li class="list__item">
+                    <div class="list__button">
+                        <i class='bx bx-log-out'></i>
+                        <a href="#" class="nav__link">Salir</a>
+                    </div>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </aside>
+    </nav>
 
     <section class="recetas-destacadas" id="recetas-destacadas"> <!-- Seccion de recetas-destacadas -->
         <div class="main-text">
