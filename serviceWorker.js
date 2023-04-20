@@ -3,16 +3,16 @@ const StaticRecetas = "Recetas-site-v1"
 const assets = [
     "/",
     "/Recetas/index.html",
-    "/css/styles.css",
-    "/css/contacto.css",
-    "/css/inicio.css",
-    "/js/app.js",
-    "/images/likibhbjn.png",
-    "/bebidas.html",
-    "/contacto.html",
-    "/destacadas.html",
-    "/platos-principales.html",
-    "/postres.html"
+    "/Recetas/css/styles.css",
+    "/Recetas/css/contacto.css",
+    "/Recetas/css/inicio.css",
+    "/Recetas/js/app.js",
+    "/Recetas/images/likibhbjn.png",
+    "/Recetas/bebidas.html",
+    "/Recetas/contacto.html",
+    "/Recetas/destacadas.html",
+    "/Recetas/platos-principales.html",
+    "/Recetas/postres.html"
     
 ]
 
