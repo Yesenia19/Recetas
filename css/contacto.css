@@ -148,67 +148,34 @@ i{
 .main-text h2 {
     font-size: 50px;
     line-height: 1;
-    color: var(--color-hojita);
+    color: var(--color-rarito);
     font-family: 'Delicious Handrawn', cursive;
 }
-.main-text p {
-    color: var(--color-blanco);
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-.content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 5rem;
-}
-.box::-webkit-scrollbar{
-    width: 7pz;
-}
-.box::-webkit-scrollbar-thumb{
-    background: var(--color-babyrosa);
-    border-radius: 5px;
-}
-.box {
-    background: var(--color-blanco);
-    padding: 35px 45px;
-    border-radius: 8px;
-    transition: all .45s ease;
-}
-.box h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-fresa);
-    margin-bottom: 15px;
-    text-align: center;
+h3{
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
     font-family: 'Alkatra', cursive;
-
-}
-.box ul{
-    color: var(--color-negro);
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    font-family: 'Raleway', sans-serif;
-}
-.box p{
     color: var(--color-hojita);
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 30px;
+}
+p{
+    font-size: 25px;
+    text-align: justify;
     font-family: 'Raleway', sans-serif;
+    color: var(--color-negro);
 }
-.imagen{
-    height: 190px;
-    width: 100%;
-    
+span {
+    color: var(--color-fresa);
 }
-.box:hover {
-    transform: translateY(-8px);
-    cursor: pointer;
+.contacto-icons i{
+    align-items: center;
+    transition: all .45s ease;
+    color: var(--color-fresa);
+    width: 10%;
+    font-size: 55px;
+}
+.contacto-icons i:hover {
+    color: var(--color-rosita);
 }
 
 /* Pie de página */
@@ -240,8 +207,12 @@ i{
         font-size: 40px;
     }
     h3{
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 18px;
+    }
+    .contacto-icons i{
+        font-size: 28px;
     }
 }
-
-

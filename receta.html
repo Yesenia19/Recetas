@@ -20,56 +20,6 @@
       
 
         <script>
-            /*var db = firebase.database();
-            var ref = db.ref("Recetas");
-            
-            var table = document.getElementById("rece");
-            var valo = document.getElementById("valor"); 
-
-            ref.orderByChild("nombre").on("child_added", function(snapshot){
-            //repite el proceso como cuantas referencias encuentre y los asigna a la lista "d"
-                 
-            var miArray = snapshot.val();    
-
-           console.log(miArray.Ingredientes)
-
-            var contenedor = document.getElementById("contenedor"); // Obtenemos el elemento contenedor
-
-            
-            for (var i = 0; i < miArray.length; i++) {
-                var nuevoElemento = document.createElement("p"); // Creamos un nuevo elemento "p"
-                nuevoElemento.textContent = miArray.nombre[i]; // Agregamos el texto del arreglo al nuevo elemento
-                contenedor.appendChild(nuevoElemento); // Agregamos el nuevo elemento al contenedor
-            }
-        });
-            
-            function busca_user() {    
-            
-            var db = firebase.database();
-            var ref = db.ref("Recetas");
-            
-            var table = document.getElementById("rece");
-            var valo = document.getElementById("valor");
-
-            
-             //con esta función recorre todos los datos almacenados en FB ordenados por mi child(tipo)
-                
-            ref.orderByChild("nombre").on("child_added", function(snapshot){
-            //repite el proceso como cuantas referencias encuentre y los asigna a la lista "d"
-                 
-            var d = snapshot.val();        
-            
-            
-            {
-                // asigna a las celdas el valir del Child especificado
-                table.innerText = d.nombre;
-                valo.innerText = d.Ingredientes;
-            }
-                
-            });
-             
-            }
-           busca_user();*/
            
             // Obtén una referencia a la base de datos de Firebase
             var db = firebase.database();
@@ -78,28 +28,6 @@
             // Obtén una referencia a la lista HTML
             var contenedor = document.getElementById("miLista");
 
-
-            // Escucha los cambios en la ubicación de la base de datos y actualiza la lista HTML
-            /*ref.on("value", function(snapshot) {
-                lista.innerHTML = ""; // Limpia la lista antes de agregar los nuevos elementos
-                snapshot.forEach(function(childSnapshot) {
-                    var childData = childSnapshot.val(); // Obtiene los datos del hijo
-                    var nuevoElemento1 = document.createElement("div");
-                    var nuevoElemento = document.createElement("h3");
-                    var nuevoElemento2 = document.createElement("li"); // Crea un nuevo elemento "li"
-                    nuevoElemento.textContent = childData.nombre; // Agrega el nombre del dato al nuevo elemento
-                    var i =0;
-                    lista.appendChild(nuevoElemento);
-                    for (i in childData.Ingredientes){
-                        nuevoElemento2.textContent = childData.Ingredientes[i]; 
-                        lista.appendChild(nuevoElemento2);
-                        i=i+1;
-                    }
-                    // Agrega el nombre del dato al nuevo elemento
-                    
-                     // Agrega el nuevo elemento a la lista
-                });
-            });*/
             ref.on("value", function(snapshot) {
             contenedor.innerHTML = ""; // Limpia el contenedor antes de agregar los nuevos elementos
             snapshot.forEach(function(childSnapshot) {
@@ -108,35 +36,35 @@
                 console.log(childData2);
                 var nuevoElemento = document.createElement("div");
                 var nuevoElemento1 = document.createElement("div");  // Crea un nuevo elemento "div"
-                
+                var nuevoElemento3 = document.createElement("div");
+
                 nuevoElemento.classList.add("box"); 
                 var i = 1;
-               // Agrega una clase CSS al nuevo elemento
-              
-               nuevoElemento.innerHTML = "<h3>" + childData.nombre + "</h3></h3><p>Ingredientes:</p><ul>";
+                // Agrega una clase CSS al nuevo elemento
+                var imagen = "imagen";
+                nuevoElemento.innerHTML = "<img src="+childData.imagen+" alt="+childData.nombre+" class="+imagen+"><h3>" + childData.nombre + "</h3></h3><p>Ingredientes:</p><ul>";
                 for(i in childData2) {
                     console.log(childData2[i]);
                     nuevoElemento1.innerHTML = "<li>"+ childData2[i] + "</li><ul>"; // Agrega el contenido HTML al nuevo elemento
-                nuevoElemento.innerHTML = nuevoElemento.innerHTML + nuevoElemento1.innerHTML;
-                contenedor.appendChild(nuevoElemento);
+                    nuevoElemento.innerHTML = nuevoElemento.innerHTML + nuevoElemento1.innerHTML;
+                    contenedor.appendChild(nuevoElemento);
                     i=i+1; 
                 }// Agrega el contenido HTML al nuevo elemento
                 // Agrega el nuevo elemento al contenedor
                 
             });
             });
-                // Agrega un escucha para los cambios en la base de datos
+                /*// Agrega un escucha para los cambios en la base de datos
                 ref.on('child_added', function(data) {
                 // Muestra una alerta cada vez que se agrega un dato a la base de datos
                 alert("Se agregó un nuevo dato: ");
                 new Notification('Nuevo mensaje', {
                 body: 'Revisa la actualizacion',
-                icon: 'images/icon-384x384.png'
-    }); 
-                });
+                icon: 'images/icon-384x384.png'}); 
+                });*/
 
                 
-        </script>    
+        </script>   
     </body>
  </html>
  

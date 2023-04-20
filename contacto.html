@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recetas</title>
+        <link rel="stylesheet" href="css/contacto.css"/>
+        <link rel="manifest" href="manifest.json" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="/Recetas/images/icon.png" >
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!--Encabezado de la página-->
+        <header class="header">
+            <a id="open-close"><i class='bx bx-menu'></i></a>
+            <img class="logo" src="images/likibhbjn.png" alt="">
+        </header>
+        
+        <!--Menú de navegación-->
+        <nav class="nav">
+            <aside id="aside"> 
+                <ul class="list">
+
+                    <!--Opción para Inicio-->
+                    <li class="list__item">
+                        <div class="list__button">
+                            <i class='bx bx-home'></i>
+                            <a href="inicio.html" class="nav__link">Inicio</a>
+                        </div>
+                    </li>
+                    
+                    <!--Opción para Categorias-->
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <i class='bx bx-category-alt'></i>
+                            <a href="#" class="nav__link">Categorias</a>
+                            <i class='bx bxs-chevron-right list__arrow'></i>
+                        </div>
+
+                        <!--Opción para Submenus-->
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="platos-principales.html" class="nav__link nav__link--inside">Platos Principales</a>
+                            </li>
+                            <li class="list__inside">
+                                <a href="postres.html" class="nav__link nav__link--inside">Postres Saludabes</a>
+                            </li>
+                            <li class="list__inside">
+                                <a href="bebidas.html" class="nav__link nav__link--inside">Bebidas Naturales</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--Opción para Recetas Destacadas-->
+                    <li class="list__item">
+                        <div class="list__button">
+                            <i class='bx bxs-star'></i>
+                            <a href="destacadas.html" class="nav__link">Recetas Destacadas</a>
+                        </div>
+                    </li>
+
+                    <!--Opción para contacto-->
+                    <li class="list__item">
+                        <div class="list__button">
+                            <i class='bx bxs-contact' ></i>
+                            <a href="contacto.html" class="nav__link">Contacto</a>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </nav>
+
+        <!-- Seccion de inicio -->
+        <section class="sections" id="inicio"> 
+            <div class="main-text"> <br>
+                <h2>¡ Contáctanos !</h2>
+            </div> <br> <br>
+            <p><span>Teléfonos:</span> 7752365776 & 7751873717<br>
+                <span>Correo:</span> disfruta_recetas@gmail.com</p> <br>
+            <h3>Like & Comparte</h3> <br>
+            <div class="contacto-icons"> <style></style>
+                <a aria-label="Redes sociales" href="#"><i class='bx bxl-facebook'></i></a>
+                <a aria-label="Redes sociales" href="#"><i class='bx bxl-twitter' ></i></a>
+                <a aria-label="Redes sociales" href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+        </section> <br>
+
+        <!-- Pie de pagina -->
+        <footer class="pie-pagina">
+            <small> <b>Recetas de cocina </b>&copy; 2023</small>
+        </footer>
+        
+        <script src="js/app.js"></script>
+        <script src="js/notificacion.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

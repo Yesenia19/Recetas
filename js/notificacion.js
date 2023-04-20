@@ -3,10 +3,10 @@ Notification.requestPermission().then(permission => {
   if (permission === 'granted') {
     console.log("El usuario ha permitido las notificaciones");
     // El usuario ha permitido las notificaciones
-    new Notification('Nuevo mensaje', {
+    /*new Notification('Nuevo mensaje', {
         body: 'Revisa las actualizaciones que tenemos para ti',
         icon: 'images/icon-384x384.png'
-    }); 
+    });*/ 
   } else {
       console.log("El usuario ha denegado las notificaciones");
       // El usuario ha denegado las notificaciones
