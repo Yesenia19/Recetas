@@ -2,7 +2,7 @@ const StaticRecetas = "Recetas-site-v1"
 
 const assets = [
     "/",
-    "Recetas/index.html",
+    "index.html",
     "/css/styles.css",
     "/css/contacto.css",
     "/css/inicio.css",
